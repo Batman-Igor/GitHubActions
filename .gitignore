@@ -25,8 +25,8 @@
 hs_err_pid*
 
 .idea/ZeppelinRemoteNotebooks/
-pom.xml
-src/
+#pom.xml
+#src/
 target/generated-sources/
 target/generated-test-sources/
 target/gitHubActionsPractice.jar.original
