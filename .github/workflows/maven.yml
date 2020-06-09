@@ -4,6 +4,7 @@
 name: my-java-project-with-github-actions
 env:
   HELLO_WORlD: Hello, World! 
+  GITHUB_SHA: github.sha 
 
 on:
   push:
@@ -29,4 +30,6 @@ jobs:
     needs: build
     steps:
       - name: Show message
-        run: echo ${{HELLO_WORLD}} STARTED!
+        run: | 
+          echo ${{ env.HELLO_WORLD}} STARTED!
+          echo ${{ env.GITHUB_SHA }}
