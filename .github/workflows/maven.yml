@@ -2,6 +2,8 @@
 # For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
 
 name: my-java-project-with-github-actions
+env:
+  HELLO_WORlD: Hello, World! 
 
 on:
   push:
@@ -27,4 +29,4 @@ jobs:
     needs: build
     steps:
       - name: Show message
-        run: echo STARTED!
+        run: echo ${{HELLO_WORLD}} STARTED!
