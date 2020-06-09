@@ -4,7 +4,7 @@
 name: my-java-project-with-github-actions
 env:
   HELLO_WORlD: Hello, World! 
-  GITHUB_SHA: github.sha 
+  GITHUB_SHA: ${{ github.sha }} 
 
 on:
   push:
