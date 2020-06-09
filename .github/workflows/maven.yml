@@ -25,14 +25,14 @@ jobs:
     - name: Build with Maven
     - run: mvn -B package --file pom.xml
       
-    - name: Copy jar
-      run: mkdir staging && cp target/*.jar staging
+#     - name: Copy jar
+#       run: mkdir staging && cp target/*.jar staging
       
-    - name: Uploading artifact
-      uses: actions/upload-artifact@v1
-      with:
-        name: Package
-        path: staging
+#     - name: Uploading artifact
+#       uses: actions/upload-artifact@v1
+#       with:
+#         source:"./target/"
+#         path: staging
     
     - name: List current folder
       run: ls -la
