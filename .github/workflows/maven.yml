@@ -24,6 +24,7 @@ jobs:
       
   message:
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Show message
         run: echo STARTED!
