@@ -37,8 +37,8 @@ jobs:
     - name: List current folder
       run: ls -la
       
-    - name: Start java app
-      run: java -jar /target/gitHubActionsPractice.jar
+#     - name: Start java app
+#       run: java -jar /target/gitHubActionsPractice.jar
         
   message:
     runs-on: ubuntu-latest
